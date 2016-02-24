@@ -3,6 +3,9 @@
 *.lo
 *.o
 *.obj
+*.doc
+*.docx
+*.pdf
 
 # Precompiled Headers
 *.gch
