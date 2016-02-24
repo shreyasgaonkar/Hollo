@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="nocomp.hollo.Login">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:enabled="true"
+        android:onClick="login"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_toLeftOf="@+id/create"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/create"
+        android:enabled="true"
+        android:onClick="createAcc"
+        android:layout_below="@+id/password"
+        android:layout_alignRight="@+id/password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:text="Server Address"
+        android:inputType="text"
+        android:editable="true"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/connect"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/port" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:text="User"
+        android:inputType="text"
+        android:editable="true"
+        android:textIsSelectable="true"
+        android:singleLine="false"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:text="Password"
+        android:inputType="text"
+        android:editable="true"
+        android:textIsSelectable="true"
+        android:password="false"
+        android:textColorHighlight="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/debug"
+        android:layout_alignRight="@+id/address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/port"
+        android:clickable="true"
+        android:focusable="true"
+        android:enabled="true"
+        android:text="Port"
+        android:inputType="text"
+        android:editable="true"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/connect"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/connect"
+        android:enabled="true"
+        android:onClick="startConnection"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="   Debug"
+        android:id="@+id/debug"
+        android:layout_above="@+id/address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Hollo"
+        android:id="@+id/textView"
+        android:layout_above="@+id/user"
+        android:layout_toLeftOf="@+id/port"
+        android:layout_alignLeft="@+id/user"
+        android:textSize="68dp" />
+
+</RelativeLayout>

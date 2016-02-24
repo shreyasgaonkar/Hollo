@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1595</width>
+    <height>992</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1601</width>
+      <height>1001</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>1581</width>
+       <height>981</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="logInPage">
+      <widget class="QLineEdit" name="user_name">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>70</y>
+         <width>501</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User Name</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>180</y>
+         <width>501</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="log_in_button">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>300</y>
+         <width>501</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="create_account">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>560</y>
+         <width>501</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Create Account</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="log_label">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>830</y>
+         <width>491</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="chat_page">
+      <widget class="QTextEdit" name="chat">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>1171</width>
+         <height>891</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="input_line">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>930</y>
+         <width>1071</width>
+         <height>33</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="send_button">
+       <property name="geometry">
+        <rect>
+         <x>1100</x>
+         <y>930</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Send</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="friends_list">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>20</y>
+         <width>351</width>
+         <height>431</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="accept_button">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>730</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Accept</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="remove_button">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>780</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Remove</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_friend_button">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>830</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Friend</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="status_combo">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>880</y>
+         <width>361</width>
+         <height>37</height>
+        </rect>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="pending_list">
+       <property name="geometry">
+        <rect>
+         <x>1210</x>
+         <y>470</y>
+         <width>351</width>
+         <height>251</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="user_label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>1151</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
